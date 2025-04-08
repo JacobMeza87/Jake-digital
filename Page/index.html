@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jake! - Marketing Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body class="pagina-index">
+<!--inicio del header-->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="/imagenes/jake transporte color.png" alt="Jake! Marketing Digital">
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="/Page/index.html">Inicio</a></li>
+                    <li><a href="/Page/servicios.html">Servicios</a></li>
+                    <li><a href="/Page/nosotros.html">Nosotros</a></li>
+                    <li><a href="/Page/conctacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+<!--Fin del header-->
+
+<!--inicio del hero-->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Transformamos Tu Visión Digital en Resultados Tangibles</h1>
+            <p class="hero-subtitle">En Jake! combinamos estrategias innovadoras y tecnología de vanguardia para impulsar tu presencia online</p>
+            <a href="#contacto" class="cta-button">¡Comienza Tu Transformación!</a>
+        </div>
+    </section>
+<!--inicio del hero-->
+<!--inicio seccion servicios-->
+<section class="services py-5">
+    <div class="container">
+        <h2 class="section-title fw-bold text-center mb-3">Nuestros Servicios Especializados</h2>
+        <p class="section-subtitle text-center text-muted mb-5">Soluciones a medida para impulsar tu crecimiento digital</p>
+        
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="icon-container mb-4">
+                        <img src="/imagenes/publi.png" 
+                             alt="Publicidad Digital" 
+                             class="service-icon">
+                    </div>
+                    <h3 class="fw-bold mb-3">Publicidad Digital</h3>
+                    <p class="mb-4">Campañas estratégicas en Google Ads y redes sociales para maximizar tu ROI</p>
+                    <a href="/Page/publicidad.html" class="btn service-btn">Descubre más</a>
+                </div>
+            </div>
+            
+            <!-- Servicio 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="icon-container mb-4">
+                        <img src="/imagenes/seo tecnico.png" 
+                             alt="SEO" 
+                             class="service-icon">
+                    </div>
+                    <h3 class="fw-bold mb-3">Estrategia SEO</h3>
+                    <p class="mb-4">Posicionamiento orgánico que aumenta tu visibilidad y tráfico cualificado</p>
+                    <a href="/Page/seo.html" class="btn service-btn">Descubre más</a>
+                </div>
+            </div>
+            
+            <!-- Servicio 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="icon-container mb-4">
+                        <img src="/imagenes/social-media.png" 
+                             alt="Social Media" 
+                             class="service-icon">
+                    </div>
+                    <h3 class="fw-bold mb-3">Social Media</h3>
+                    <p class="mb-4">Gestión creativa de redes sociales que conecta con tu audiencia ideal</p>
+                    <a href="/Page/social.html" class="btn service-btn">Descubre más</a>
+                </div>
+            </div>
+            
+            <!-- Servicio 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="service-card text-center p-4 h-100">
+                    <div class="icon-container mb-4">
+                        <img src="/imagenes/grabacion.png" 
+                             alt="Audiovisuales" 
+                             class="service-icon">
+                    </div>
+                    <h3 class="fw-bold mb-3">Audiovisuales</h3>
+                    <p class="mb-4">Producción de contenido multimedia profesional que cuenta tu historia</p>
+                    <a href="/Page/audiovisual.html" class="btn service-btn">Descubre más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .services {
+        background: #f8f9fa;
+    }
+    
+    .section-title {
+        color: #2E0249;
+        font-size: 2.5rem;
+    }
+    
+    .service-card {
+        background: white;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border: 1px solid rgba(46, 2, 73, 0.1);
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(46, 2, 73, 0.1);
+    }
+    
+    .service-icon {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+    
+    .service-card:hover .service-icon {
+        transform: scale(1.1);
+    }
+    
+    .service-btn {
+        background: #C71585;
+        color: white !important;
+        padding: 0.8rem 2rem;
+        border-radius: 25px;
+        border: none;
+        transition: all 0.3s ease;
+    }
+    
+    .service-btn:hover {
+        background: #2E0249;
+        transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+        }
+    }
+</style>
+<!--fin seccion servicios-->
+<!--inicio seccion sobre Nosotros-->
+<section class="about">
+    <div class="about-container">
+        <div class="about-grid">
+            <!-- Columna Imagen -->
+            <div class="about-image">
+                <div class="image-wrapper"></div>
+            </div>
+            
+            <!-- Columna Contenido -->
+            <div class="about-content">
+                <h2 class="section-title">Más que una agencia,<br>somos tu aliado digital</h2>
+                <p class="about-text">
+                    En Jake! Digital, contamos con más de 5 años de experiencia en el mundo de la publicidad digital. Nuestro equipo está formado por profesionales altamente capacitados y con amplia experiencia en diversos rubros, como estética, belleza, comercio y más. Nos especializamos en crear estrategias personalizadas que potencian la presencia digital de tu marca, conectando con tu audiencia de manera efectiva y generando resultados tangibles. Confía en nosotros para llevar tu negocio al siguiente nivel.
+                </p>
+                <a href="#contacto" class="cta-button">Agenda una consultoría</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--fin seccion sobre Nosotros-->
+
+<!--Inicio de testimonio de clientes-->
+<section class="testimonials">
+    <div class="testimonials-container">
+        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+        
+        <div class="testimonials-grid">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-card">
+                <div class="client-photo">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Cliente 1">
+                </div>
+                <blockquote>
+                    "Jake! transformó completamente nuestra presencia digital. En 3 meses duplicamos nuestras ventas online."
+                </blockquote>
+                <div class="client-info">
+                    <h4>María Gómez</h4>
+                    <p>CEO - Belleza Natural</p>
+                </div>
+            </div>
+
+            <!-- Testimonio 2 -->
+            <div class="testimonial-card">
+                <div class="client-photo">
+                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1949&q=80" alt="Cliente 2">
+                </div>
+                <blockquote>
+                    "Su estrategia SEO nos posicionó en primeros lugares de búsqueda. ¡Resultados increíbles!"
+                </blockquote>
+                <div class="client-info">
+                    <h4>Carlos Rojas</h4>
+                    <p>Dueño - TiendaDeportiva</p>
+                </div>
+            </div>
+
+            <!-- Testimonio 3 -->
+            <div class="testimonial-card">
+                <div class="client-photo">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1948&q=80" alt="Cliente 3">
+                </div>
+                <blockquote>
+                    "El mejor ROI que hemos tenido en publicidad digital. Profesionales de primer nivel."
+                </blockquote>
+                <div class="client-info">
+                    <h4>Ana Torres</h4>
+                    <p>Directora - Clínica Estética</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--fin de testimonio de clientes-->
+
+<!--INICIO DE FORMULARIO-->
+<section id="contacto" class="contact">
+    <div class="contact-container">
+        <h3 class="contact-title">Contáctanos para ayudarte</h3>
+        
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" required>
+                <label for="name">Nombre y Apellidos</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="tel" id="phone" required>
+                <label for="phone">Celular</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Enviar consulta</button>
+        </form>
+    </div>
+</section>
+<!--fin de formualrio-->
+
+<!--Inicio del footer-->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Columna Logo -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="footer-logo"> 
+                    <img src="/imagenes/jake tranparente blanco.png" alt="Jake! Marketing Digital" class="img-fluid mb-3" style="max-width: 200px;">
+                </div>
+            </div>
+
+            <!-- Columna Enlaces rápidos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Enlaces Rápidos</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/Page/index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="/Page/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="/Page/servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                    <li><a href="/Page/conctacto.html" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Servicios -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Servicios</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/Page/seo.html" class="text-white text-decoration-none">SEO</a></li>
+                    <li class="mb-2"><a href="/Page/publicidad.html" class="text-white text-decoration-none">Publicidad Digital</a></li>
+                    <li class="mb-2"><a href="/Page/social.html" class="text-white text-decoration-none">Social Media</a></li>
+                    <li><a href="/Page/audiovisual.html" class="text-white text-decoration-none">Producción Audiovisual</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Redes y Newsletter -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Conéctate con Nosotros</h4>
+                <div class="social-links d-flex gap-3 mb-4">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <form class="newsletter-form">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu email" required>
+                        <button class="btn btn-primary" type="submit">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-bottom pt-4 mt-4 border-top">
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <p class="mb-0">&copy; 2024 Jake! Marketing Digital. Todos los derechos reservados</p>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="legal-links">
+                        <a href="#politica" class="text-white text-decoration-none me-2">Política de Privacidad</a>
+                        <a href="#terminos" class="text-white text-decoration-none">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #2E0249 !important;
+    }
+    
+    .footer a {
+        transition: all 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #C71585 !important;
+        text-decoration: underline !important;
+    }
+    
+    .social-links a {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary {
+        background-color: #C71585 !important;
+        border-color: #C71585 !important;
+    }
+    
+    .btn-primary:hover {
+        background-color: #FF1493 !important;
+        border-color: #FF1493 !important;
+    }
+</style>
+<!--fin de footer-->
+</html>

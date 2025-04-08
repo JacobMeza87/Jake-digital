@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Jake! Marketing Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <style>
+        :root {
+            --morado: #2E0249;
+            --rosa: #C71585;
+        }
+        
+        .navbar {
+            background: white !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link {
+            color: var(--morado) !important;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+        
+        .hero-contacto {
+            background: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
+                       url('/imagenes/nosotros\ portada.webp');
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .btn-jake {
+            background: var(--morado);
+            color: white !important;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-jake:hover {
+            background: var(--rosa);
+            transform: translateY(-2px);
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            background-color: var(--rosa) !important;
+        }
+        
+        .card-proyecto {
+            border: 2px solid var(--morado);
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card-proyecto:hover {
+            transform: translateY(-5px);
+        }
+        
+        .form-contacto input,
+        .form-contacto textarea {
+            border: 2px solid var(--rosa) !important;
+            color: var(--rosa) !important;
+        }
+    </style>
+</head>
+<body>
+    <!--Inicio de Header-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/Page/index.html">
+                <img src="/imagenes/jake transporte color.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="/Page/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="/Page/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="/Page/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fw-bold" href="/Page/conctacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+        .nav-link {
+            color: #2E0249 !important;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+    
+        .nav-link:hover {
+            color: #C71585 !important;
+        }
+    
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #C71585;
+            left: 0;
+            bottom: 0;
+            transition: width 0.3s ease;
+        }
+    
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    
+        .navbar-toggler {
+            border-color: #C71585 !important;
+        }
+    
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(199, 21, 133, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+    
+        @media (max-width: 991px) {
+            .nav-link::after {
+                display: none;
+            }
+            
+            .navbar-nav {
+                padding: 20px 0;
+                text-align: center;
+            }
+            
+            .nav-item {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <!--fin de Header-->
+
+    <!--Inicio de seccion de nosotros-->
+    
+    
+    <!--fin de seccion de nosotros-->
+
+    <!-- Sección Hero -->
+    <section class="hero-contacto d-flex align-items-center">
+        <div class="container text-white text-center">
+            <p class="lead">Somos un grupo liderado por</p>
+            <h2 class="display-3 fw-bold mb-4">Nuestros Servicios</h2>
+            <a href="#" class="btn btn-jake">¡Contactanos!</a>
+        </div>
+    </section>
+    <!-- fin Sección Hero -->
+
+    <!--inicio de seccion nosotros-->
+    <section class="nosotros py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Columna de Imagen -->
+                <div class="col-md-6">
+                    <div class="image-wrapper">
+                        <img src="/imagenes/nosotros jake.webp" 
+                             alt="Equipo profesional" 
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+    
+                <!-- Columna de Contenido -->
+                <div class="col-md-6">
+                    <h2 class="mb-4" style="color: #2E0249;">Más de 5 años transformando negocios digitales</h2>
+                    <p class="lead" style="color: #6B7280;">
+                        En <strong style="color: #C71585;">Jake! Marketing Digital</strong>, hemos consolidado nuestra experiencia trabajando con diversos sectores, desarrollando soluciones a medida que generan resultados tangibles. Nro equipo multidisciplinario cuenta con especialización en:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Educación:</strong> Estrategias para instituciones educativas y e-learning
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Estética y Belleza:</strong> Posicionamiento de clínicas y centros de estética
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>E-commerce:</strong> Optimización de tiendas online y conversiones
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Agencias de Viajes:</strong> Marketing turístico y gestión de reputación
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Ingeniería:</strong> Desarrollo de estrategias B2B especializadas
+                        </li>
+                    </ul>
+                    <p class="mt-4" style="color: #6B7280;">
+                        Nuestra metodología combina análisis de datos, creatividad estratégica y tecnología de vanguardia para ofrecer soluciones que realmente impactan en tus objetivos de negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .nosotros {
+            background: #ffffff;
+            border-bottom: 1px solid rgba(46, 2, 73, 0.1);
+        }
+        
+        .image-wrapper img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        ul li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .image-wrapper img {
+                height: 350px;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<!--fin de seccion nosotros-->
+    
+<!-- inicio de Sección Proyectos -->
+<section class="py-5 proyectos">
+    <div class="container">
+        <h2 class="text-center mb-5" style="color: var(--morado);">Nuestros Proyectos</h2>
+        
+        <div class="row g-4">
+            <!-- Proyecto 1 -->
+            <div class="col-md-6">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/diseño pagina web proyecto.webp" 
+                         class="card-img-top" 
+                         alt="Creación de páginas web"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Creación de páginas web</h5>
+                        <p class="text-muted mb-4">Desarrollo de sitios web modernos y responsivos</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="col-md-6">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/gestion comercial proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Gestión Comercial"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Gestión Comercial</h5>
+                        <p class="text-muted mb-4">Estrategias integrales de crecimiento empresarial</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="col-md-6">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/adminsitarcion redes sociales proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Administración de Redes Sociales"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Administración de Redes Sociales</h5>
+                        <p class="text-muted mb-4">Gestión profesional de comunidades digitales</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="col-md-6">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/publicidad digital proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Publicidad Digital"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Publicidad Digital</h5>
+                        <p class="text-muted mb-4">Campañas efectivas en medios digitales</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="col-md-6 mx-auto">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/diseño visual prpyectos.webp" 
+                         class="card-img-top" 
+                         alt="Diseño Audiovisual"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Diseño y Producción Audiovisual</h5>
+                        <p class="text-muted mb-4">Contenido multimedia de alto impacto</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hover-effect {
+        transition: all 0.3s ease;
+        transform: translateY(0);
+    }
+    
+    .hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(107, 9, 168, 0.15) !important;
+    }
+    
+    .btn-jake-proyectos {
+        background: var(--rosa);
+        color: white !important;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Montserrat', sans-serif;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-jake-proyectos:hover {
+        background: var(--morado);
+        transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+        .card-proyecto {
+            margin-bottom: 2rem;
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+        }
+    }
+</style>
+<!--fin seccion proyectos-->
+
+<!-- inicio de Sección Contacto -->
+<section id="contacto" class="py-5 contact-section" style="background-color: var(--morado);">
+    <div class="container">
+        <h3 class="text-center mb-4 text-white">Contáctanos</h3>
+        
+        <!-- Información de contacto -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8 text-center">
+                <ul class="list-unstyled text-white">
+                    <li class="mb-3">
+                        <i class="fas fa-envelope me-2"></i>Email: informes@jakedigital.com
+                    </li>
+                    <li class="mb-3">
+                        <i class="fas fa-phone me-2"></i>Whatsapp: 987 676 231
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle José Francisco Arana 323 - Cercado de Lima - Lima, Perú
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="form-contacto bg-white p-4 rounded-3 shadow-lg">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control form-control-lg" 
+                                   placeholder="Nombre completo" 
+                                   style="border-color: var(--rosa);">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control form-control-lg" 
+                                   placeholder="Correo electrónico" 
+                                   style="border-color: var(--rosa);">
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" class="form-control form-control-lg" 
+                                   placeholder="Celular" 
+                                   style="border-color: var(--rosa);">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control form-control-lg" 
+                                      rows="4" 
+                                      placeholder="Mensaje"
+                                      style="border-color: var(--rosa);"></textarea>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="submit" 
+                                    class="btn btn-jake px-5 py-2" 
+                                    style="font-size: 1.1rem;">
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contact-section {
+        padding: 4rem 0;
+    }
+    
+    .form-contacto input,
+    .form-contacto textarea {
+        color: var(--morado) !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .form-contacto input::placeholder,
+    .form-contacto textarea::placeholder {
+        color: #999 !important;
+    }
+    
+    .btn-jake {
+        background-color: var(--rosa) !important;
+        color: white !important;
+        border: none;
+        border-radius: 30px;
+        transition: all 0.3s ease;
+    }
+    
+    .btn-jake:hover {
+        background-color: #FF1493 !important;
+        transform: translateY(-2px);
+    }
+    
+    .list-unstyled li {
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-section {
+            padding: 3rem 0;
+        }
+        
+        .form-contacto {
+            padding: 1.5rem !important;
+        }
+    }
+</style>
+<!--Fin de seccion contactenos-->
+
+<!--Inicio del footer-->
+<footer class="footer bg-dark text-white py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Columna Logo -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="footer-logo">
+                    <img src="/imagenes/jake tranparente blanco.png" alt="Jake! Marketing Digital" class="img-fluid mb-3" style="max-width: 200px;">
+                </div>
+            </div>
+
+            <!-- Columna Enlaces rápidos -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Enlaces Rápidos</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
+                    <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Servicios -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Servicios</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/Page/seo.html" class="text-white text-decoration-none">SEO</a></li>
+                    <li class="mb-2"><a href="/Page/publicidad.html" class="text-white text-decoration-none">Publicidad Digital</a></li>
+                    <li class="mb-2"><a href="/Page/social.html" class="text-white text-decoration-none">Social Media</a></li>
+                    <li><a href="/Page/audiovisual.html" class="text-white text-decoration-none">Producción Audiovisual</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna Redes y Newsletter -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h4 class="h5 mb-3">Conéctate con Nosotros</h4>
+                <div class="social-links d-flex gap-3 mb-4">
+                    <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+
+                <form class="newsletter-form">
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Ingresa tu email" required>
+                        <button class="btn btn-primary" type="submit">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-bottom pt-4 mt-4 border-top">
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <p class="mb-0">&copy; 2024 Jake! Marketing Digital. Todos los derechos reservados</p>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="legal-links">
+                        <a href="#politica" class="text-white text-decoration-none me-2">Política de Privacidad</a>
+                        <a href="#terminos" class="text-white text-decoration-none">Términos de Servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: #2E0249 !important;
+    }
+    
+    .footer a {
+        transition: all 0.3s ease;
+    }
+    
+    .footer a:hover {
+        color: #C71585 !important;
+        text-decoration: underline !important;
+    }
+    
+    .social-links a {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary {
+        background-color: #C71585 !important;
+        border-color: #C71585 !important;
+    }
+    
+    .btn-primary:hover {
+        background-color: #FF1493 !important;
+        border-color: #FF1493 !important;
+    }
+</style>
+<!--fin de footer-->
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -165,7 +165,7 @@
 /* Hero especifico para pagina de inicio */
 .pagina-index .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
-                      url(/imagenes/portda-index-v1.jpg);
+                      url(imagenes/portda-index-v1.jpg);
 }
 
 /* Hero especifico para pagina de publicidad */
@@ -451,7 +451,7 @@
 
 /* Imagen para la página de social*/ 
 .pagina-social .image-wrapper {
-    background-image: url(/imagenes/social\ media\ -2.webp);
+    background-image: url(imagenes/social\ media\ -2.webp);
 }
 
 /* Efecto hover */

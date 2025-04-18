@@ -69,6 +69,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     }
 });
 // fin seccion formulario
+
 // Manejo del newsletter
 document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
     e.preventDefault();

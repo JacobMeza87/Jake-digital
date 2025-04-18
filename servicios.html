@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Jake! Marketing Digital</title>
+    <title>Servicios - Jake! Marketing Digital</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -28,7 +28,7 @@
         
         .hero-contacto {
             background: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
-                       url('/imagenes/contactenos\ portada.webp');
+                       url('/imagenes/nuestros\ servicos\ portada.webp');
             height: 80vh;
             background-size: cover;
             background-position: center;
@@ -90,7 +90,7 @@
                         <a class="nav-link fw-bold" href="/Page/nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link fw-bold" href="#contacto">Contacto</a>
+                        <a class="nav-link fw-bold" href="/Page/conctacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -127,10 +127,6 @@
             border-color: #C71585 !important;
         }
     
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(199, 21, 133, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    
         @media (max-width: 991px) {
             .nav-link::after {
                 display: none;
@@ -151,9 +147,9 @@
     <!-- Sección Hero -->
     <section class="hero-contacto d-flex align-items-center">
         <div class="container text-white text-center">
-            <p class="lead">Somos un grupo liderado por la</p>
-            <h2 class="display-3 fw-bold mb-4">Estrategia, Diseño y Tecnología</h2>
-            <a href="#" class="btn btn-jake">Ver mis proyectos</a>
+            <p class="lead">Somos un grupo liderado por</p>
+            <h2 class="display-3 fw-bold mb-4">Nuestros Servicios</h2>
+            <a href="#" class="btn btn-jake">¡Contactanos!</a>
         </div>
     </section>
     <!-- fin Sección Hero -->
@@ -163,74 +159,62 @@
     <div class="container">
         <h2 class="text-center mb-5" style="color: var(--morado);">Nuestros Servicios</h2>
         
-        <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <!-- Slide 1 (2 servicios) -->
-                <div class="carousel-item active">
-                    <div class="row g-4">
-                        <!-- Servicio 1 -->
-                        <div class="col-md-6">
-                            <div class="service-card">
-                                <img src="/imagenes/publcidad digital servicio.webp" class="d-block w-100" alt="Publicidad Digital">
-                                <div class="service-caption">
-                                    <h3>Publicidad Digital</h3>
-                                    <p>Campañas estratégicas en Google Ads y redes sociales</p>
-                                    <a href="#" class="btn btn-jake">Deseas contactarnos</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Servicio 2 -->
-                        <div class="col-md-6">
-                            <div class="service-card">
-                                <img src="/imagenes/estrategia seo servicios.webp" class="d-block w-100" alt="SEO">
-                                <div class="service-caption">
-                                    <h3>Estrategia SEO</h3>
-                                    <p>Posicionamiento orgánico en motores de búsqueda</p>
-                                    <a href="#" class="btn btn-jake">Deseas contactarnos</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 (2 servicios) -->
-                <div class="carousel-item">
-                    <div class="row g-4">
-                        <!-- Servicio 3 -->
-                        <div class="col-md-6">
-                            <div class="service-card">
-                                <img src="/imagenes/social-media-servicio.webp" class="d-block w-100" alt="Social Media">
-                                <div class="service-caption">
-                                    <h3>Social Media</h3>
-                                    <p>Gestión profesional de redes sociales</p>
-                                    <a href="#" class="btn btn-jake">Deseas contactarnos</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Servicio 4 -->
-                        <div class="col-md-6">
-                            <div class="service-card">
-                                <img src="/imagenes/produccion audiovisual servicio.webp" class="d-block w-100" alt="Audiovisual">
-                                <div class="service-caption">
-                                    <h3>Producción Audiovisual</h3>
-                                    <p>Contenido multimedia profesional</p>
-                                    <a href="#" class="btn btn-jake">Deseas contactarnos</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row g-4">
+            <!-- Servicio 1 -->
+            <div class="col-md-6">
+                <div class="service-card">
+                    <img src="/imagenes/publcidad digital servicio.webp" 
+                         class="w-100" 
+                         alt="Publicidad Digital">
+                    <div class="service-caption">
+                        <h3>Publicidad Digital</h3>
+                        <p>Campañas estratégicas en Google Ads y redes sociales</p>
+                        <a href="#" class="btn btn-jake">Conoce más</a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Controles del carrusel -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+
+            <!-- Servicio 2 -->
+            <div class="col-md-6">
+                <div class="service-card">
+                    <img src="/imagenes/estrategia seo servicios.webp" 
+                         class="w-100" 
+                         alt="SEO">
+                    <div class="service-caption">
+                        <h3>Estrategia SEO</h3>
+                        <p>Posicionamiento orgánico en motores de búsqueda</p>
+                        <a href="#" class="btn btn-jake">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 3 -->
+            <div class="col-md-6">
+                <div class="service-card">
+                    <img src="/imagenes/social-media-servicio.webp" 
+                         class="w-100" 
+                         alt="Social Media">
+                    <div class="service-caption">
+                        <h3>Social Media</h3>
+                        <p>Gestión profesional de redes sociales</p>
+                        <a href="#" class="btn btn-jake">Conoce más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Servicio 4 -->
+            <div class="col-md-6">
+                <div class="service-card">
+                    <img src="/imagenes/produccion audiovisual servicio.webp" 
+                         class="w-100" 
+                         alt="Audiovisual">
+                    <div class="service-caption">
+                        <h3>Producción Audiovisual</h3>
+                        <p>Contenido multimedia profesional</p>
+                        <a href="#" class="btn btn-jake">Conoce más</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -241,6 +225,7 @@
         border-radius: 15px;
         overflow: hidden;
         transition: transform 0.3s ease;
+        margin-bottom: 1.5rem;
     }
 
     .service-card:hover {
@@ -248,9 +233,10 @@
     }
 
     .service-card img {
-        height: 500px;
+        height: 400px;
         object-fit: cover;
         filter: brightness(0.7);
+        width: 100%;
     }
 
     .service-caption {
@@ -279,162 +265,26 @@
         transform: translateY(-2px);
     }
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        background-color: #C71585;
-        border-radius: 50%;
-        padding: 15px;
-        background-size: 60%;
-    }
-
     @media (max-width: 768px) {
         .service-card img {
             height: 300px;
         }
         
         .service-caption {
+            padding: 15px;
             bottom: 10px;
             left: 10px;
             right: 10px;
-            padding: 15px;
         }
         
-        .carousel-item .row > div {
-            margin-bottom: 15px;
+        .btn-jake {
+            padding: 8px 20px;
+            font-size: 0.9rem;
         }
     }
 </style>
-
-<script>
-    // Inicializar carrusel con autoplay
-    const myCarousel = new bootstrap.Carousel(document.getElementById('carouselServicios'), {
-        interval: 5000,
-        wrap: true
-    })
-</script>
     <!--fin seccion Nuestros servicios-->
     
-<!-- inicio de Sección Proyectos -->
-<section class="py-5 proyectos">
-    <div class="container">
-        <h2 class="text-center mb-5" style="color: var(--morado);">Nuestros Proyectos</h2>
-        
-        <div class="row g-4">
-            <!-- Proyecto 1 -->
-            <div class="col-md-6">
-                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
-                    <img src="/imagenes/diseño pagina web proyecto.webp" 
-                         class="card-img-top" 
-                         alt="Creación de páginas web"
-                         style="height: 300px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold" style="color: var(--morado);">Creación de páginas web</h5>
-                        <p class="text-muted mb-4">Desarrollo de sitios web modernos y responsivos</p>
-                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 2 -->
-            <div class="col-md-6">
-                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
-                    <img src="/imagenes/gestion comercial proyectos.webp" 
-                         class="card-img-top" 
-                         alt="Gestión Comercial"
-                         style="height: 300px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold" style="color: var(--morado);">Gestión Comercial</h5>
-                        <p class="text-muted mb-4">Estrategias integrales de crecimiento empresarial</p>
-                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="col-md-6">
-                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
-                    <img src="/imagenes/adminsitarcion redes sociales proyectos.webp" 
-                         class="card-img-top" 
-                         alt="Administración de Redes Sociales"
-                         style="height: 300px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold" style="color: var(--morado);">Administración de Redes Sociales</h5>
-                        <p class="text-muted mb-4">Gestión profesional de comunidades digitales</p>
-                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 4 -->
-            <div class="col-md-6">
-                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
-                    <img src="/imagenes/publicidad digital proyectos.webp" 
-                         class="card-img-top" 
-                         alt="Publicidad Digital"
-                         style="height: 300px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold" style="color: var(--morado);">Publicidad Digital</h5>
-                        <p class="text-muted mb-4">Campañas efectivas en medios digitales</p>
-                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proyecto 5 -->
-            <div class="col-md-6 mx-auto">
-                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
-                    <img src="/imagenes/diseño visual prpyectos.webp" 
-                         class="card-img-top" 
-                         alt="Diseño Audiovisual"
-                         style="height: 300px; object-fit: cover;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold" style="color: var(--morado);">Diseño y Producción Audiovisual</h5>
-                        <p class="text-muted mb-4">Contenido multimedia de alto impacto</p>
-                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    .hover-effect {
-        transition: all 0.3s ease;
-        transform: translateY(0);
-    }
-    
-    .hover-effect:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(107, 9, 168, 0.15) !important;
-    }
-    
-    .btn-jake-proyectos {
-        background: var(--rosa);
-        color: white !important;
-        padding: 0.8rem 2rem;
-        border-radius: 30px;
-        border: none;
-        font-family: 'Montserrat', sans-serif;
-        transition: all 0.3s ease;
-    }
-    
-    .btn-jake-proyectos:hover {
-        background: var(--morado);
-        transform: translateY(-2px);
-    }
-    
-    @media (max-width: 768px) {
-        .card-proyecto {
-            margin-bottom: 2rem;
-        }
-        
-        .card-title {
-            font-size: 1.2rem;
-        }
-    }
-</style>
-<!--fin seccion proyectos-->
 
 <!-- inicio de Sección Contacto -->
 <section id="contacto" class="py-5 contact-section" style="background-color: var(--morado);">
@@ -559,10 +409,10 @@
             <div class="col-md-6 col-lg-3 mb-4">
                 <h4 class="h5 mb-3">Enlaces Rápidos</h4>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
-                    <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
-                    <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
-                    <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    <li class="mb-2"><a href="/Page/index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="/Page/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="/Page/servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                    <li><a href="/Page/conctacto.html" class="text-white text-decoration-none">Contacto</a></li>
                 </ul>
             </div>
 

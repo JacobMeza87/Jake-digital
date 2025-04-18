@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Jake! Marketing Digital</title>
+    <title>Nosotros - Jake! Marketing Digital</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -28,7 +28,7 @@
         
         .hero-contacto {
             background: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
-                       url('/imagenes/nuestros\ servicos\ portada.webp');
+                       url('/imagenes/nosotros\ portada.webp');
             height: 80vh;
             background-size: cover;
             background-position: center;
@@ -127,10 +127,6 @@
             border-color: #C71585 !important;
         }
     
-        .navbar-toggler-icon {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(199, 21, 133, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    
         @media (max-width: 991px) {
             .nav-link::after {
                 display: none;
@@ -153,69 +149,170 @@
         <div class="container text-white text-center">
             <p class="lead">Somos un grupo liderado por</p>
             <h2 class="display-3 fw-bold mb-4">Nuestros Servicios</h2>
-            <a href="#" class="btn btn-jake">¡Contactanos!</a>
+            <a href="#contacto" class="btn btn-jake">¡Contactanos!</a>
         </div>
     </section>
     <!-- fin Sección Hero -->
 
-<!-- Inicio de Sección nuestros Servicios -->
-<section class="py-5 servicios">
+    <!--inicio de seccion nosotros-->
+    <section class="nosotros py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Columna de Imagen -->
+                <div class="col-md-6">
+                    <div class="image-wrapper">
+                        <img src="/imagenes/nosotros jake.webp" 
+                             alt="Equipo profesional" 
+                             class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+    
+                <!-- Columna de Contenido -->
+                <div class="col-md-6">
+                    <h2 class="mb-4" style="color: #2E0249;">Más de 5 años transformando negocios digitales</h2>
+                    <p class="lead" style="color: #6B7280;">
+                        En <strong style="color: #C71585;">Jake! Marketing Digital</strong>, hemos consolidado nuestra experiencia trabajando con diversos sectores, desarrollando soluciones a medida que generan resultados tangibles. Nro equipo multidisciplinario cuenta con especialización en:
+                    </p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Educación:</strong> Estrategias para instituciones educativas y e-learning
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Estética y Belleza:</strong> Posicionamiento de clínicas y centros de estética
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>E-commerce:</strong> Optimización de tiendas online y conversiones
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Agencias de Viajes:</strong> Marketing turístico y gestión de reputación
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-check-circle me-2" style="color: #C71585;"></i>
+                            <strong>Ingeniería:</strong> Desarrollo de estrategias B2B especializadas
+                        </li>
+                    </ul>
+                    <p class="mt-4" style="color: #6B7280;">
+                        Nuestra metodología combina análisis de datos, creatividad estratégica y tecnología de vanguardia para ofrecer soluciones que realmente impactan en tus objetivos de negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .nosotros {
+            background: #ffffff;
+            border-bottom: 1px solid rgba(46, 2, 73, 0.1);
+        }
+        
+        .image-wrapper img {
+            height: 500px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        ul li {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .image-wrapper img {
+                height: 350px;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            ul li {
+                font-size: 1rem;
+            }
+        }
+    </style>
+<!--fin de seccion nosotros-->
+    
+<!-- inicio de Sección Proyectos -->
+<section class="py-5 proyectos">
     <div class="container">
-        <h2 class="text-center mb-5" style="color: var(--morado);">Nuestros Servicios</h2>
+        <h2 class="text-center mb-5" style="color: var(--morado);">Nuestros Proyectos</h2>
         
         <div class="row g-4">
-            <!-- Servicio 1 -->
+            <!-- Proyecto 1 -->
             <div class="col-md-6">
-                <div class="service-card">
-                    <img src="/imagenes/publcidad digital servicio.webp" 
-                         class="w-100" 
-                         alt="Publicidad Digital">
-                    <div class="service-caption">
-                        <h3>Publicidad Digital</h3>
-                        <p>Campañas estratégicas en Google Ads y redes sociales</p>
-                        <a href="#" class="btn btn-jake">Conoce más</a>
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/diseño pagina web proyecto.webp" 
+                         class="card-img-top" 
+                         alt="Creación de páginas web"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Creación de páginas web</h5>
+                        <p class="text-muted mb-4">Desarrollo de sitios web modernos y responsivos</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Servicio 2 -->
+            <!-- Proyecto 2 -->
             <div class="col-md-6">
-                <div class="service-card">
-                    <img src="/imagenes/estrategia seo servicios.webp" 
-                         class="w-100" 
-                         alt="SEO">
-                    <div class="service-caption">
-                        <h3>Estrategia SEO</h3>
-                        <p>Posicionamiento orgánico en motores de búsqueda</p>
-                        <a href="#" class="btn btn-jake">Conoce más</a>
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/gestion comercial proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Gestión Comercial"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Gestión Comercial</h5>
+                        <p class="text-muted mb-4">Estrategias integrales de crecimiento empresarial</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Servicio 3 -->
+            <!-- Proyecto 3 -->
             <div class="col-md-6">
-                <div class="service-card">
-                    <img src="/imagenes/social-media-servicio.webp" 
-                         class="w-100" 
-                         alt="Social Media">
-                    <div class="service-caption">
-                        <h3>Social Media</h3>
-                        <p>Gestión profesional de redes sociales</p>
-                        <a href="#" class="btn btn-jake">Conoce más</a>
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/adminsitarcion redes sociales proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Administración de Redes Sociales"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Administración de Redes Sociales</h5>
+                        <p class="text-muted mb-4">Gestión profesional de comunidades digitales</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Servicio 4 -->
+            <!-- Proyecto 4 -->
             <div class="col-md-6">
-                <div class="service-card">
-                    <img src="/imagenes/produccion audiovisual servicio.webp" 
-                         class="w-100" 
-                         alt="Audiovisual">
-                    <div class="service-caption">
-                        <h3>Producción Audiovisual</h3>
-                        <p>Contenido multimedia profesional</p>
-                        <a href="#" class="btn btn-jake">Conoce más</a>
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/publicidad digital proyectos.webp" 
+                         class="card-img-top" 
+                         alt="Publicidad Digital"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Publicidad Digital</h5>
+                        <p class="text-muted mb-4">Campañas efectivas en medios digitales</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="col-md-6 mx-auto">
+                <div class="card card-proyecto h-100 border-0 shadow-lg hover-effect">
+                    <img src="/imagenes/diseño visual prpyectos.webp" 
+                         class="card-img-top" 
+                         alt="Diseño Audiovisual"
+                         style="height: 300px; object-fit: cover;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold" style="color: var(--morado);">Diseño y Producción Audiovisual</h5>
+                        <p class="text-muted mb-4">Contenido multimedia de alto impacto</p>
+                        <a href="#" class="btn btn-jake-proyectos">Ver proyectos</a>
                     </div>
                 </div>
             </div>
@@ -224,71 +321,42 @@
 </section>
 
 <style>
-    .service-card {
-        position: relative;
-        border-radius: 15px;
-        overflow: hidden;
-        transition: transform 0.3s ease;
-        margin-bottom: 1.5rem;
+    .hover-effect {
+        transition: all 0.3s ease;
+        transform: translateY(0);
     }
-
-    .service-card:hover {
-        transform: translateY(-5px);
+    
+    .hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(107, 9, 168, 0.15) !important;
     }
-
-    .service-card img {
-        height: 400px;
-        object-fit: cover;
-        filter: brightness(0.7);
-        width: 100%;
-    }
-
-    .service-caption {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        color: white;
-        padding: 20px;
-        background: rgba(46, 2, 73, 0.8);
-        border-radius: 10px;
-    }
-
-    .btn-jake {
-        background-color: #C71585;
+    
+    .btn-jake-proyectos {
+        background: var(--rosa);
         color: white !important;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
         border: none;
-        padding: 10px 25px;
-        border-radius: 25px;
         font-family: 'Montserrat', sans-serif;
         transition: all 0.3s ease;
     }
-
-    .btn-jake:hover {
-        background-color: #FF1493;
+    
+    .btn-jake-proyectos:hover {
+        background: var(--morado);
         transform: translateY(-2px);
     }
-
+    
     @media (max-width: 768px) {
-        .service-card img {
-            height: 300px;
+        .card-proyecto {
+            margin-bottom: 2rem;
         }
         
-        .service-caption {
-            padding: 15px;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-        }
-        
-        .btn-jake {
-            padding: 8px 20px;
-            font-size: 0.9rem;
+        .card-title {
+            font-size: 1.2rem;
         }
     }
 </style>
-    <!--fin seccion Nuestros servicios-->
-    
+<!--fin seccion proyectos-->
 
 <!-- inicio de Sección Contacto -->
 <section id="contacto" class="py-5 contact-section" style="background-color: var(--morado);">
@@ -413,10 +481,10 @@
             <div class="col-md-6 col-lg-3 mb-4">
                 <h4 class="h5 mb-3">Enlaces Rápidos</h4>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#inicio" class="text-white text-decoration-none">Inicio</a></li>
-                    <li class="mb-2"><a href="#nosotros" class="text-white text-decoration-none">Nosotros</a></li>
-                    <li class="mb-2"><a href="#servicios" class="text-white text-decoration-none">Servicios</a></li>
-                    <li><a href="#contacto" class="text-white text-decoration-none">Contacto</a></li>
+                    <li class="mb-2"><a href="/Page/index.html" class="text-white text-decoration-none">Inicio</a></li>
+                    <li class="mb-2"><a href="/Page/nosotros.html" class="text-white text-decoration-none">Nosotros</a></li>
+                    <li class="mb-2"><a href="/Page/servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                    <li><a href="/Page/conctacto.html" class="text-white text-decoration-none">Contacto</a></li>
                 </ul>
             </div>
 

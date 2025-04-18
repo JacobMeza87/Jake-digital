@@ -35,7 +35,7 @@
     transform: scale(1.05);
 }
 
-/* Estilos del menú de navegación */
+/* Estilos del menu de navegacion */
 .nav-menu {
     display: flex;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -77,7 +77,7 @@
     width: 100%;
 }
 
-/* Estilos del menú hamburguesa */
+/* Estilos menu hamburguesa */
 .hamburger {
     display: none;
     cursor: pointer;
@@ -94,7 +94,7 @@
     transition: all 0.3s ease;
 }
 
-/*estilo de Responsive Design */
+/*estilo de Responsive celular */
 @media (max-width: 860px) {
     .hamburger {
         display: block;
@@ -144,15 +144,15 @@
         display: none;
     }
 }
+/* fin Estilos del header */
 
-/*estilo del hero */
+/*Estilo del hero */
 
-/* Sección Hero */
 .hero { 
     position: relative;
     height: 90vh;
     min-height: 600px;
-    margin-top: 70px; /* Ajuste para el header fijo */
+    margin-top: 70px; /* Se ajusto para el header este fijo */
         background-size: cover;
     background-position: center;
     display: flex;
@@ -162,31 +162,31 @@
     padding: 0 2rem;
 }
 
-/* Hero específico para página de inicio */
+/* Hero especifico para pagina de inicio */
 .pagina-index .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
                       url(/imagenes/portada\ jake.webp);
 }
 
-/* Hero específico para página de publicidad */
+/* Hero especifico para pagina de publicidad */
 .pagina-publicidad .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
                       url(/imagenes/publcidad\ digital\ servicio.webp);
 }
 
-/* Hero específico para página de SEO*/
+/* Hero especifico para pagina de SEO*/
 .pagina-seo .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
                       url(/imagenes/seo\ -3.webp);
 }
 
-/* Hero específico para página de social */
+/* Hero especifico para pagina de social */
 .pagina-social .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
                       url(/imagenes/redes\ sociales\ 2.webp);
 }
 
-/* Hero específico para página de audiovisual*/
+/* Hero especifico para pagina de audiovisual*/
 .pagina-audiovisual .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
                       url(/imagenes/produccion\ audiovisual\ servicio.webp);
@@ -240,7 +240,7 @@
     box-shadow: 0 6px 20px rgba(255, 20, 147, 0.5);
 }
 
-/* Responsive Design */
+/* Responsive Celular */
 @media (max-width: 992px) {
     .hero h1 {
         font-size: 2.8rem;
@@ -375,7 +375,7 @@
     transform: scale(1.05);
 }
 
-/* Responsive Design */
+/* Responsive celular */
 @media (max-width: 768px) {
     .services {
         padding: 3rem 0;
@@ -554,7 +554,6 @@
 /* fin de seccion sobre nosotros*/
 
 /* inicio de seccion testimonio de clientes*/
-/* Sección Testimonios */
 .testimonials {
     background: #f9f9ff;
     padding: 5rem 0;
@@ -640,7 +639,7 @@ blockquote::after {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive celular */
 @media (max-width: 992px) {
     .testimonials-grid {
         gap: 1.5rem;
@@ -669,7 +668,7 @@ blockquote::after {
 }
 /* fin de seccion de testimonio de clientes*/
 
-/* Sección Contacto */
+/* Seccion Contacto formulario*/
 .contact {
     background-color: #8307d0;
     padding: 5rem 0;
@@ -755,7 +754,7 @@ blockquote::after {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* Responsive celular */
 @media (max-width: 768px) {
     .contact {
         padding: 3rem 0;
@@ -784,7 +783,7 @@ blockquote::after {
         font-size: 0.9rem;
     }
 }
-/*fin formulario*/
+/*fin seccion contacto formulario*/
 
 
 /* inicio del Footer */
@@ -928,7 +927,7 @@ blockquote::after {
     color: #FF1493;
 }
 
-/* Responsive Design */
+/* Responsive Celular footer */
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;

@@ -165,13 +165,13 @@
 /* Hero especifico para pagina de inicio */
 .pagina-index .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
-                      url(/imagenes/portada\ jake.webp);
+                      url(imagenes/portada-para-web-hero.webp);
 }
 
 /* Hero especifico para pagina de publicidad */
 .pagina-publicidad .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
-                      url(/imagenes/publcidad\ digital\ servicio.webp);
+                      url(imagenes/publcidad\ digital\ servicio.webp);
 }
 
 /* Hero especifico para pagina de SEO*/

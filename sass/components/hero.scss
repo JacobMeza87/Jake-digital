@@ -13,23 +13,23 @@
   
     // Variantes de página
     &.pagina-index {
-      background-image: $hero-overlay-index, url("/imagenes/portda-index-v1.jpg");
+      background-image: $hero-overlay-index, url("imagenes/portda-index-v1.jpg");
     }
   
     &.pagina-publicidad {
-      background-image: $hero-overlay-generic, url("/imagenes/publcidad-digital-servicio.webp");
+      background-image: $hero-overlay-generic, url("imagenes/publcidad-digital-servicio.webp");
     }
   
     &.pagina-seo {
-      background-image: $hero-overlay-generic, url("/imagenes/seo-3.webp");
+      background-image: $hero-overlay-generic, url("imagenes/seo-3.webp");
     }
   
     &.pagina-social {
-      background-image: $hero-overlay-generic, url("/imagenes/social-media-2.webp");
+      background-image: $hero-overlay-generic, url("imagenes/social-media-2.webp");
     }
   
     &.pagina-audiovisual {
-      background-image: $hero-overlay-generic, url("/imagenes/produccion-audiovisual-servicio.webp");
+      background-image: $hero-overlay-generic, url("imagenes/produccion-audiovisual-servicio.webp");
     }
   
     &-content {

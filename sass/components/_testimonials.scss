@@ -1,0 +1,86 @@
+.testimonials {
+    background: $testimonial-bg;
+    padding: 5rem 0;
+  
+    &-container {
+      @include container-width;
+    }
+  
+    &-grid {
+      @include grid-container(repeat(auto-fit, minmax(300px, 1fr)), 2rem);
+      margin-top: 3rem;
+  
+      @include respond-to('medium') {
+        gap: 1.5rem;
+      }
+    }
+  }
+  
+  .testimonial-card {
+    background: $testimonial-card-bg;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: $transition-fast;
+    @include hover-effect {
+      transform: translateY(-10px);
+    }
+  
+    blockquote {
+      color: $quote-color;
+      font-style: italic;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding: 0 1rem;
+  
+      &::before,
+      &::after {
+        color: $primary;
+        font-size: $quote-icon-size;
+        position: absolute;
+        opacity: 0.7;
+      }
+  
+      &::before {
+        content: "“";
+        left: 0;
+        top: -0.5rem;
+      }
+  
+      &::after {
+        content: "”";
+        right: 0;
+        bottom: -1.5rem;
+      }
+  
+      @include respond-to('small') {
+        min-height: auto;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  
+  .client-photo {
+    @include circle-element(100px);
+    border: 3px solid $primary;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+  
+    img {
+      @include full-size-object;
+    }
+  }
+  
+  .client-info {
+    h4 {
+      color: $client-name-color;
+      margin-bottom: 0.5rem;
+      @include font-size(1.1rem, 1rem);
+    }
+  
+    p {
+      color: $client-role-color;
+      @include font-size(0.9rem, 0.8rem);
+    }
+  }

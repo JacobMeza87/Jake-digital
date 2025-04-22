@@ -1,0 +1,84 @@
+.services {
+    background: $section-bg-light;
+    padding: 5rem 0;
+  
+    &-container {
+      @include container-width;
+    }
+  
+    .section-title {
+      @include section-title;
+    }
+  
+    .section-subtitle {
+      @include section-subtitle;
+    }
+  
+    &-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+  
+      @include respond-to('medium') {
+        gap: 1.5rem;
+      }
+    }
+  }
+  
+  .service-card {
+    background: $service-card-bg;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: $transition-fast;
+    box-shadow: $service-shadow;
+    
+    @include hover-effect {
+      transform: $service-hover-transform;
+      box-shadow: $service-hover-shadow;
+    }
+  
+    &-icon {
+      width: $service-icon-size;
+      height: $service-icon-size;
+      margin: 0 auto 1.5rem;
+      transition: $transition-fast;
+  
+      img {
+        @include full-size-object;
+      }
+    }
+  
+    h3 {
+      color: $secondary;
+      margin-bottom: 1rem;
+      @include font-size(1.4rem, 1.2rem);
+    }
+  
+    p {
+      color: $service-text-color;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      @include font-size(0.95rem, 0.85rem);
+    }
+  
+    @include respond-to('medium') {
+      padding: 2rem 1.5rem;
+    }
+  }
+  
+  .service-btn {
+    @include cta-button($primary, $white);
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+  
+    &:hover {
+      background: $white;
+      color: $primary !important;
+      border: 2px solid $primary;
+    }
+  }
+
+  

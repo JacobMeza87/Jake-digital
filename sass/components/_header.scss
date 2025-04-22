@@ -1,0 +1,109 @@
+.header {
+    background: $white;
+    padding: 1rem 0;
+    box-shadow: $header-shadow;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  
+    &-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+  }
+  
+  .logo {
+    img {
+      height: $logo-height;
+      width: auto;
+      transition: transform $transition-fast;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+  
+  .nav-menu {
+    display: flex;
+    transition: all $transition-slow;
+  
+    @include mobile-menu {
+      position: fixed;
+      left: -100%;
+      top: $header-height;
+      width: 100%;
+      background: $white;
+      text-align: center;
+      padding: 2rem 0;
+      box-shadow: $nav-shadow;
+      height: calc(100vh - #{$header-height});
+      overflow-y: auto;
+  
+      &.active {
+        left: 0;
+      }
+    }
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  
+    @include mobile-menu {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+  
+    a {
+      text-decoration: none;
+      color: $secondary;
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 5px 0;
+      @include hover-underline;
+  
+      @include mobile-menu {
+        font-size: 1.2rem;
+  
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    @include hamburger-bars;
+  
+    &.active {
+      .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background: $primary;
+      }
+      
+      .bar:nth-child(2) {
+        opacity: 0;
+      }
+      
+      .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background: $primary;
+      }
+    }
+  
+    @include mobile-menu {
+      display: block;
+    }
+  }

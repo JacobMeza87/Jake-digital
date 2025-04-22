@@ -1,0 +1,118 @@
+.hero {
+    position: relative;
+    height: $hero-height-desktop;
+    min-height: $hero-min-height;
+    margin-top: $header-height;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+  
+    // Variantes de página
+    &.pagina-index {
+      background-image: $hero-overlay-index, url("/imagenes/portda-index-v1.jpg");
+    }
+  
+    &.pagina-publicidad {
+      background-image: $hero-overlay-generic, url("/imagenes/publcidad-digital-servicio.webp");
+    }
+  
+    &.pagina-seo {
+      background-image: $hero-overlay-generic, url("/imagenes/seo-3.webp");
+    }
+  
+    &.pagina-social {
+      background-image: $hero-overlay-generic, url("/imagenes/social-media-2.webp");
+    }
+  
+    &.pagina-audiovisual {
+      background-image: $hero-overlay-generic, url("/imagenes/produccion-audiovisual-servicio.webp");
+    }
+  
+    &-content {
+      position: relative;
+      z-index: 2;
+      max-width: $hero-content-max-width;
+      color: $white;
+  
+      h1 {
+        font-family: $font-primary;
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        text-shadow: $hero-text-shadow;
+  
+        @include respond-to('medium') {
+          font-size: 2.8rem;
+        }
+  
+        @include respond-to('small') {
+          font-size: 2.2rem;
+          margin-bottom: 1rem;
+        }
+  
+        @include respond-to('mobile') {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  
+  .hero-subtitle {
+    font-family: $font-primary;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  
+    @include respond-to('medium') {
+      font-size: 1.2rem;
+    }
+  
+    @include respond-to('small') {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+  
+    @include respond-to('mobile') {
+      font-size: 1rem;
+    }
+  }
+  
+  // Mixin para el CTA (reutilizable en otras secciones)
+  @mixin cta-button {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background-color: $primary;
+    color: $white;
+    font-family: $font-primary;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: $cta-transition;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: $cta-shadow;
+  
+    &:hover {
+      background-color: darken($primary, 10%);
+      transform: translateY(-2px);
+      box-shadow: $cta-hover-shadow;
+    }
+  
+    @include respond-to('small') {
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+    }
+  }
+  
+  .cta-button {
+    @include cta-button;
+  }

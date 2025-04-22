@@ -1,0 +1,98 @@
+.contact-form {
+    background: rgba(255, 255, 255, 0.926);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba($primary, 0.2);
+    
+    @include respond-to('small') {
+      padding: 1.5rem;
+    }
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 2rem;
+    
+    @include form-input;
+    
+    label {
+      @include form-label;
+    }
+    
+    input,
+    textarea {
+      @include form-field;
+      width: 100%;
+      
+      &:focus,
+      &:not(:placeholder-shown) {
+        + label {
+          transform: translateY(-50%);
+          top: 0;
+          font-size: 0.8rem;
+          background: $white;
+          padding: 0 0.3rem;
+        }
+      }
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+  }
+  
+  .submit-btn {
+    @include cta-button($primary, $white);
+    width: 100%;
+    padding: 1rem;
+    border-radius: $input-radius;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    &:hover {
+      background: darken($primary, 10%);
+    }
+    
+    @include respond-to('mobile') {
+      font-size: 0.9rem;
+    }
+  }
+  
+  // Mixin para campos de formulario reutilizables
+  @mixin form-field {
+    padding: 1rem;
+    border: $input-border;
+    border-radius: $input-radius;
+    font-family: $font-primary;
+    font-size: 1rem;
+    color: $primary;
+    background: transparent;
+    transition: $transition-fast;
+    
+    &:focus {
+      outline: none;
+      background: $input-focus-bg;
+    }
+  }
+  
+  @mixin form-label {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $primary;
+    pointer-events: none;
+    transition: $label-transition;
+    background: transparent;
+    padding: 0 0.3rem;
+  }
+  
+  @mixin form-input {
+    position: relative;
+    margin-bottom: 2rem;
+    
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }

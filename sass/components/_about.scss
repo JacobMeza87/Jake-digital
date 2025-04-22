@@ -1,0 +1,103 @@
+.about {
+    background: $about-bg;
+    padding: 5rem 0;
+  
+    &-container {
+      @include container-width;
+    }
+  
+    &-grid {
+      @include grid-container(1fr 1fr, $about-grid-gap);
+      align-items: center;
+  
+      @include respond-to('medium') {
+        gap: 2rem;
+      }
+  
+      @include respond-to('small') {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+  
+    &-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: $about-image-radius;
+      height: $about-image-height;
+      transition: transform $transition-fast;
+  
+      &-wrapper {
+        @include background-cover;
+        height: 100%;
+  
+        // Variantes de página
+        .pagina-index & {
+          background-image: url("/imagenes/nosotros-jake.webp");
+        }
+        
+        .pagina-publicidad & {
+          background-image: url("/imagenes/publcidad-digital-marketing-2.webp");
+        }
+
+        .pagina-seo & {
+            background-image: url("/imagenes/seo\ -2.webp");
+        }
+
+        .pagina-social & {
+            background-image: url("/imagenes/social\ media\ -2.webp");
+        }
+
+        .pagina-audiovisual & {
+            background-image: url("/imagenes/audio\ visual\ -2.webp");
+        }
+  
+        // Añadido varias de otras paginas
+      }
+  
+      &:hover {
+        transform: scale($image-hover-scale);
+      }
+  
+      @include respond-to('medium') {
+        height: 400px;
+      }
+  
+      @include respond-to('small') {
+        height: 350px;
+      }
+  
+      @include respond-to('mobile') {
+        height: 250px;
+      }
+    }
+  
+    &-content {
+      padding-left: 2rem;
+  
+      @include respond-to('small') {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+  
+    &-text {
+      color: $about-text-color;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      @include font-size(1.1rem, 1rem);
+  
+      @include respond-to('small') {
+        text-align: center;
+      }
+    }
+  
+    .cta-button {
+      @include cta-button;
+      margin-top: 1rem;
+  
+      @include respond-to('small') {
+        margin: 0 auto;
+      }
+    }
+  }

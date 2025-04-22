@@ -404,27 +404,27 @@
 
 /* Imagen para la página de inicio */
 .pagina-index .image-wrapper {
-  background-image: url("../imagenes/nosotros\ jake.webp");
+  background-image: url("..imagenes/nosotros\ jake.webp");
 }
 
 /* Imagen para la página de publicidad */
 .pagina-publicidad .image-wrapper {
-  background-image: url("../imagenes/publcidad\ digital\ marketing-2.webp");
+  background-image: url("..imagenes/publcidad\ digital\ marketing-2.webp");
 }
 
 /* Imagen para la página de audiovisual */
 .pagina-audiovisual .image-wrapper {
-  background-image: url("../imagenes/audio\ visual\ -2.webp");
+  background-image: url("..imagenes/audio\ visual\ -2.webp");
 }
 
 /* Imagen para la página de seo*/
 .pagina-seo .image-wrapper {
-  background-image: url("../imagenes/seo\ -2.webp");
+  background-image: url("..imagenes/seo\ -2.webp");
 }
 
 /* Imagen para la página de social*/
 .pagina-social .image-wrapper {
-  background-image: url("../imagenes/social\ media\ -2.webp");
+  background-image: url("..imagenes/social\ media\ -2.webp");
 }
 
 /* Efecto hover */

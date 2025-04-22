@@ -1,4 +1,8 @@
+//sass uso
 /* Estilo de menu para agencia Jake! */
+$primary: #C71585;
+$secondary: #2E0249;
+
 * {
     margin: 0;
     padding: 0;
@@ -165,31 +169,31 @@
 /* Hero especifico para pagina de inicio */
 .pagina-index .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(199, 21, 133, 0.3)), 
-                      url(imagenes/portda-index-v1.jpg);
+                      url(/imagenes/portda-index-v1.jpg);
 }
 
 /* Hero especifico para pagina de publicidad */
 .pagina-publicidad .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
-                      url(imagenes/publcidad\ digital\ servicio.webp);
+                      url(/imagenes/publcidad\ digital\ servicio.webp);
 }
 
 /* Hero especifico para pagina de SEO*/
 .pagina-seo .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
-                      url(imagenes/seo\ -3.webp);
+                      url(/imagenes/seo\ -3.webp);
 }
 
 /* Hero especifico para pagina de social */
 .pagina-social .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
-                      url(imagenes/social\ media\ -2.webp);
+                      url(/imagenes/social\ media\ -2.webp);
 }
 
 /* Hero especifico para pagina de audiovisual*/
 .pagina-audiovisual .hero {
     background-image: linear-gradient(rgba(46, 2, 73, 0.7), rgba(255, 105, 180, 0.3)), 
-                      url(imagenes/produccion\ audiovisual\ servicio.webp);
+                      url(/imagenes/produccion\ audiovisual\ servicio.webp);
 }
 
 .hero-content {
@@ -431,27 +435,27 @@
 
 /* Imagen para la página de inicio */
 .pagina-index .image-wrapper {
-    background-image: url(imagenes/nosotros\ jake.webp);
+    background-image: url(/imagenes/nosotros\ jake.webp);
 }
 
 /* Imagen para la página de publicidad */
 .pagina-publicidad .image-wrapper {
-    background-image: url(imagenes/publcidad\ digital\ marketing-2.webp);
+    background-image: url(/imagenes/publcidad\ digital\ marketing-2.webp);
 }
 
 /* Imagen para la página de audiovisual */
 .pagina-audiovisual .image-wrapper {
-    background-image: url(imagenes/audio\ visual\ -2.webp);
+    background-image: url(/imagenes/audio\ visual\ -2.webp);
 }
 
 /* Imagen para la página de seo*/ 
 .pagina-seo .image-wrapper {
-    background-image: url(imagenes/seo\ -2.webp);
+    background-image: url(/imagenes/seo\ -2.webp);
 }
 
 /* Imagen para la página de social*/ 
 .pagina-social .image-wrapper {
-    background-image: url(imagenes/social\ media\ -2.webp);
+    background-image: url(/imagenes/social\ media\ -2.webp);
 }
 
 /* Efecto hover */
@@ -969,4 +973,3 @@ blockquote::after {
 .card-proyecto:hover {
     transform: translateY(-5px);
 }
-
